@@ -13,7 +13,7 @@
         padding: 20px;
     }
     &__h1 {
-        font-size: 22px;
+        @include fontSize(22px);
         color: $dark-grey;
         letter-spacing: 1px;
         margin-top: 5px;
@@ -25,7 +25,7 @@
     .breadcrumb {
         align-items: center;
         &__link {
-            font-size: 12px;
+            @include fontSize(12px);
             @extend %no-decoration;
             color: $dark-grey;
 
@@ -50,12 +50,12 @@
 
     &__date {
         margin: 0 10px;
-        font-size: 12px;
+        @include fontSize(12px);
         font-style: italic;
     }
 
     &__tag {
-        font-size: 14px;
+        @include fontSize(14px);
         padding: 5px 7px;
         color: $purple;
         border: 1px solid $purple;
@@ -64,7 +64,7 @@
 
     &__content {
         font-weight: 100;
-        font-size: 14px;
+        @include fontSize(14px);
         color: $dark-grey;
         padding: 10px 20px;
 

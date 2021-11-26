@@ -14,7 +14,7 @@
     }
 
     &__h1 {
-        font-size: 22px;
+        @include fontSize(22px);
         color: $dark-grey;
         letter-spacing: 1px;
         margin-top: 5px;
@@ -28,7 +28,7 @@
         align-items: center;
 
         &__link {
-            font-size: 12px;
+            @include fontSize(12px);
             text-decoration: none;
             color: $dark-grey;
         }
@@ -54,7 +54,7 @@
         width: 70%;
         margin: 30px auto;
         text-align: center;
-        font-size: 16px;
+        @include fontSize(16px);
 
         @include for-phone-only {
             width: 100%;
@@ -85,7 +85,7 @@
     }
 
     &__p {
-        font-size: 14px;
+        @include fontSize(14px);
         padding: 10px 20px;
         color: $dark-grey;
 
