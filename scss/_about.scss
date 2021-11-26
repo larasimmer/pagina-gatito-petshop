@@ -1,0 +1,96 @@
+.about {
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto 40px;
+
+    @include for-phone-only {
+        margin-top: 30px;
+    }
+
+    &__title {
+        background-color: $light-grey;
+        text-align: center;
+        padding: 20px;
+    }
+
+    &__h1 {
+        font-size: 22px;
+        color: $dark-grey;
+        letter-spacing: 1px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .breadcrumb {
+        @include flx(justify-content, center);
+        align-items: center;
+
+        &__link {
+            font-size: 12px;
+            text-decoration: none;
+            color: $dark-grey;
+        }
+
+            &:hover {
+                color: $purple;
+                text-decoration: underline;
+            }
+        
+        &__img {
+            width: 10px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__intro {
+        font-weight: 100;
+        color: $dark-grey;
+        width: 70%;
+        margin: 30px auto;
+        text-align: center;
+        font-size: 16px;
+
+        @include for-phone-only {
+            width: 100%;
+        }
+    }
+
+    &__split {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__img-description {
+        width: $img-width;
+
+        @include for-phone-only {
+            width: 60%;
+        }
+    }
+
+    &__txt {
+        width: calc(100% - #{$img-width});
+
+        @include for-phone-only {
+            width: 100%;
+        }
+    }
+
+    &__p {
+        font-size: 14px;
+        padding: 10px 20px;
+        color: $dark-grey;
+
+        @include for-phone-only {
+            padding-left: 10px;
+        }
+    }
+}
