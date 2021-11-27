@@ -38,7 +38,7 @@ $img-width: 45%;
     font-size: calculateRem($size);
 }
 
-@import "header", "footer", "about", "article","collection";
+@import "header", "footer", "about", "article", "collection", "contact";
 
 $directions: top, bottom, left, right;
 $layout-margin-size: 10px;
